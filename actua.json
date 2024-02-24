@@ -1,0 +1,10 @@
+[
+  {
+    "first": "This is normal text.",
+    "second": "!!This is a highlighted heading."
+  },
+  {
+    "first": "**Bold text** here.",
+    "second": "More normal text here."
+  }
+]
