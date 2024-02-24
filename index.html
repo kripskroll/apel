@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<!-- VERSION Fevrier 2024 -->
+
+
+    <title>APEL Rondeau</title>
+    <meta name="description" content="APEL Maurice Rondeau">
+    <meta name="author" content="SF">
+    <meta name="keywords" content="APEL Maurice Rondeau" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.12/dist/css/uikit.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.12/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.12/dist/js/uikit-icons.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.12/dist/js/components/parallax.js"></script>
+    <script src="dynamicContent.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Saira+Condensed:800,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@800&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+
+  <script defer>
+    document.addEventListener('DOMContentLoaded', function() {
+        const images = [
+            'https://photos.smugmug.com/photos/i-vtTXLwM/0/mpqFqHkNvB7ZkJC6rRFmWQz5WHJXjKwj9cQMPfzv/X3/i-vtTXLwM-X3.jpg',
+            'https://photos.smugmug.com/photos/i-DKFxkP4/0/PPCLPLRfBVc9Jk58tjh3XXdqmg3QQv6qbS5QbLvS/X3/i-DKFxkP4-X3.jpg',
+            'https://photos.smugmug.com/photos/i-chd9Dmr/0/CHnGn9RjVFLcjnfgfnr5xBkMqC9KVMHgpTvdDhK3Q/X3/i-chd9Dmr-X3.jpg',
+            'https://photos.smugmug.com/photos/i-TLGGHRK/0/C2MQv6C4tPCvTTMjQpXZjzGcTNGSM7xd3M8SckTcK/X3/i-TLGGHRK-X3.jpg',
+            'https://photos.smugmug.com/photos/i-8hskgGj/0/CQQcjDpsJq4fSv7j64PVZB73vTpcC9svDrfPGJsWg/X3/i-8hskgGj-X3.jpg',
+            'https://photos.smugmug.com/photos/i-xVxcCxD/0/D8gkxsfJ4G8HZTQ9tv42ZchJF5PrBWWtHcjrtpWzS/X3/i-xVxcCxD-X3.jpg',
+        ];
+        let currentIndex = 0;
+
+        const slideshowElement = document.getElementById('sldsw_fdm');
+        slideshowElement.src = images[0]; // Initial image
+
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % images.length; // Loop back to 0 after the last image
+            slideshowElement.src = images[currentIndex];
+        }, 3000); // Change image every 3 seconds
+    });
+</script>
+
+<head>
+</head>
+
+<body>
+    <!--
+
+          NAVIGATION
+
+        -->
+    <div class="uk-margin-left">
+        <ul class="mytab " uk-tab uk-switcher="{connect:'#my-id'}" style="background-color:rgb(29,179,174);">
+            <li class="uk-active "><a href="#" class="uk-heading-large uk-visible@m"><b><span
+                            style="color:#f1f1f1 !important">Actualités</span></b></a></li>
+            <li class="uk-visible@m"><a href="#" class="uk-heading-large uk-visible@m"><b><span
+                            style="color:#f1f1f1 !important">Missions</span></b></a></li>
+            <li class="uk-visible@m"><a href="#" class="uk-heading-large uk-visible@m"><span
+                        style="color:#f1f1f1 !important">L'Equipe</span></a></li>
+            <li class="uk-visible@m"><a href="#" class="uk-heading-large uk-visible@m"><span
+                        style="color:#f1f1f1 !important">Forum des métiers</span></a></li>
+            <li class="uk-visible@m"><a href="#" class="uk-heading-large uk-visible@m"><span
+                        style="color:#f1f1f1 !important">Ateliers</span></a></li>
+            <li class="uk-visible@m"><a href="#" class="uk-heading-large uk-visible@m"><span
+                        style="color:#f1f1f1 !important">Adhésion</span></a></li>
+            <li class="uk-visible@m"><a href="#" class="uk-heading-large uk-visible@m"><span
+                        style="color:#f1f1f1 !important">Contact</span></a></li>
+            <li><a href="#" class="uk-heading-large uk-visible@m"><span style="color:#f1f1f1 !important">APEL
+                        Nationale</span></a></li>
+            <a href="#" class="uk-navbar-toggle uk-hidden@m" uk-toggle="target: #offcanvas-nav" data-uk-offcanvas><span
+                    uk-icon="icon: menu;ratio: 2"></span></a>
+        </ul>
+
+        <ul id="my-id" class="uk-switcher uk-padding@m uk-margin uk-overflow-autoX">
+  
+</body>
+
+</html>
