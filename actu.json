@@ -1,7 +1,7 @@
 [
   {
     "first": "This is normal text.",
-    "second": "!!This is a highlighted heading."
+    "second": "<TITRE>This is a highlighted heading.</TITRE>"
   },
   {
     "first": "<rose>Vrai Rose text</rose> here.",
