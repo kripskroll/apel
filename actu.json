@@ -4,7 +4,7 @@
     "second": "!!This is a highlighted heading."
   },
   {
-    "first": "**Bold text** here.",
+    "first": "<rose>Bold text</rose> here.",
     "second": "More normal text here."
   }
 ]
